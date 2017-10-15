@@ -1,0 +1,74 @@
+\documentclass[letterpaper,11pt]{article}
+\title{CS 6362 Machine Learning, Fall 2017: Homework 1}
+\date{}
+\author{\bf Jiani Li}
+
+
+\usepackage[margin=1in]{geometry}
+% \usepackage{hyperref}
+\usepackage[colorlinks]{hyperref}
+\usepackage{capt-of}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{bbm}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{hyperref} 
+\usepackage{color}
+\usepackage{amstext}
+\usepackage{enumerate}
+\usepackage{amsmath,bm}
+\usepackage{fullpage}
+    
+\renewcommand{\baselinestretch}{1.15}    
+
+\begin{document}
+
+\maketitle
+
+\paragraph{Question 1:}
+Disagree. 
+\begin{enumerate}[(a)]
+\item A hypothesis class that contains the optimal hypothesis will be every large. And to search the optimal hypothesis will be very hard. 
+\item To get the optimal hypothesis, we need large enough data. Limited data will case over-fitting, high variance.
+\end{enumerate}
+
+\paragraph{Question 2:}
+False.
+
+Counter example: Suppose the optimal hypothesis is $h(x) = x^3$, but the hypothesis class is linear functions (Linear hypothesis class contain an infinite number of functions). 
+
+\paragraph{Question 3:}
+Worse.
+
+Because overfitting problem. The 1000 new example will have lower accuracy.
+
+\paragraph{Question 4:}
+$\frac{3}{7}$.
+
+The probability of one package being delivered by Fedex $P(F) = \frac{1}{2}$, being delivered by UPS $P(U) = \frac{1}{2}$.
+The probability of any outcome in the domain \{UUU, UUF, UFU, UFF, FUU, FUF, FFU, FFF\} is $\frac{1}{8}$.
+
+\begin{equation}
+P(3F) = \frac{1}{8}
+\end{equation}
+
+Given one of the packages is delivered by UPS, the probability of one UPS and two Fedex packages is
+\begin{equation}
+P(1U, 2F | \text{at least } 1U) = \frac{P(1U, 2F)}{1 - P(3F)} = \frac{\frac{3}{8} }{ \frac{7}{8} }= \frac{3}{7}
+\end{equation}
+
+\paragraph{Question 5:}
+False.
+
+The hypothesis may be optimal for the current data set. But the data set may be limited or biased, so that the hypothesis may not be optimal for another data set and thus may not be the optimal hypothesis.
+
+
+\end{document}
+
